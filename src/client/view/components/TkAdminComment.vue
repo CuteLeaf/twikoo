@@ -32,7 +32,7 @@
         </div>
         <div class="tk-content" v-html="comment.comment" ref="comments"></div>
         <div class="tk-admin-warn tk-admin-security-alert" v-if="securityAlert && securityAlert.commentId === comment._id">
-          <a class="tk-admin-close" href="#" @click.prevent="securityAlert = null" v-html="iconClose"></a>
+          <a class="tk-admin-close" @click.prevent="securityAlert = null" v-html="iconClose"></a>
           <div class="tk-admin-security-alert-message">{{ securityAlert.message }}</div>
           <div class="tk-admin-security-alert-url" v-if="securityAlert.url">
             <code>{{ securityAlert.url }}</code>

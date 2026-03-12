@@ -1,7 +1,7 @@
 <template>
   <div class="tk-admin-container">
     <div class="tk-admin" :class="{ '__show': show }" v-loading="loading">
-      <a class="tk-admin-close" href="#" @click="onClose" v-html="iconClose"></a>
+      <a class="tk-admin-close" @click="onClose" v-html="iconClose"></a>
       <div class="tk-login-title" v-if="needUpdate">
         <div>{{ t('ADMIN_NEED_UPDATE') }}</div>
         <a href="https://twikoo.js.org/update.html" target="_blank">https://twikoo.js.org/update.html</a>
@@ -43,7 +43,7 @@
         <div class="tk-panel" v-if="isLogin">
           <div class="tk-panel-title">
             <div>{{ t('ADMIN_TITLE') }}</div>
-            <a class="tk-panel-logout" href="#" @click="onLogout">{{ t('ADMIN_LOGOUT') }}</a>
+            <a class="tk-panel-logout" @click="onLogout">{{ t('ADMIN_LOGOUT') }}</a>
           </div>
           <div class="tk-tabs">
             <div class="tk-tab" :class="{ __active: activeTabName === 'comment' }" @click="activeTabName = 'comment'">{{ t('ADMIN_COMMENT') }}</div>
