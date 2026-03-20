@@ -1,8 +1,8 @@
 /*!
- * Twikoo v1.7.3
+ * Twikoo v1.7.4
  * (c) 2020-2026 iMaeGoo
  * Released under the MIT License.
- * Last Update: 2026/3/12 13:01:31
+ * Last Update: 2026/3/20 12:38:55
  */
 
 /*!
